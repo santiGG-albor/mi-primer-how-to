@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Garcia">
+    <title>Configuración de windows</title>
+    <!-- Enlaces a las hojas de estilo y fuentes externas -->
+    <link rel="stylesheet" href="prueba.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Icono de la pestaña del navegador -->
+    <link rel="icon" type="image/x-icon" href="captura/favicon.ico.png">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1> How-to sobre máquinas virtuales</h1>
+        <p>descarga, instalacion y configuración de sistemas operativos</p>
+    </header>
+    <!-- Barra de navegación para el menu lateral -->
+    <nav>
+        <ul class="nav">
+            <li><a href="isoWin.html" target="_self">Descarga de la iso de windows 10</a></li>
+            <br>
+            <br>
+            <li><a href="instalWin.html" target="_self">Instalación de windows 10</a></li>
+            <br>
+            <br>
+            <li><a href="configWin.html" target="_self">configuración de windows 10 </a></li>
+            
+        </ul>
+    </nav>
+    <!-- Contenido principal -->
+    <main>
+        <!-- Contenedor de los bloques de contenido, en el que agrupamos todo el contenido con un div para tenerlo todo agrupado
+        para poder darle los estilos del css a todos los bloques del contenido.-->
+        <div class="contenedor">
+            <!-- Bloques individuales con imágenes y texto, agrupados con div individuales -->
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 1.jpg" alt="Elemento 1">
+                
+                <p>Una vez que tengamos nuestro sistema operativo instalado, nos toca configurar nuestro sistema
+                   para que pueda comunicarse con el sistema operativo ubuntu, para ello en la barra del buscador
+                   ingresamos "Firewall de windows Defender", hacemos click en ella y abriremos el panel de 
+                   control del Firewall de Windows Defender.            
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 2.jpg" alt="Elemento 1">
+                
+                <p>Una vez en el panel de control de Firewall de Windows Defender, en la parte derecha nos 
+                   saldra sietes opciones, las que nos interesa es la opcion de configuración avanzada, 
+                   hacemos click en ella para poder entrar en el panel de configuración.
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 3.jpg" alt="Elemento 1">
+                
+                <p>Dentro del panel de configuración avanzada, en la parte derecha en las opciones que tenemos
+                   hacemos click en el opcion de Reglas de entrada, hacemos scroll hacia habajo para buscar
+                   las reglas de entrada de "Archivos e impresoras compartidos (petición eco: ICMPv4 de entrada) y
+                   Archivos e impresoras compartidos (petición eco: ICMPv6 de entrada), y hacmos click derecho 
+                   y le damos a "Habilitar regla", para Habilitar los premisos de entrada, lo hacemos en las 
+                   cuatros que nos sale las dos de ICMpv4 y las dos de ICMPv6.
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 3-1.jpg" alt="Elemento 1">
+                
+                <p>Una vez que le demos permisos y las cuatros reglas de compartir Archivos este habilitado se 
+                    nos tiene que quedar como en el imagen que tenemos. 
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 4.jpg" alt="Elemento 1">
+                
+                <p>Una vez que tengamos los permisos habilitado, en la barra del buscador ingresamos 
+                    configuración de uso compartido avanzado, buscamos el apartado compartir archivos e impresoras
+                    y activamos la opcion de "activar el uso compartido de archivos e impresoras", con todo estos 
+                    paso ya nuestro sistema operativo esta listo para poder comunicarse con nuestro sistema operativo
+                    ubuntu.
+
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 5.jpg" alt="Elemento 1">
+                
+                <p>Ahora vamos a comprobar que nuestro sistema operativo windows puede hacer ping al sistema operativo
+                    ubuntu, para ello abrimos Ejecutar, si no sabemos donde esta en el buscador ingresamos "Ejecutar", 
+                    dentro de Ejecutar ingresamos "cmd" para que no se  habrá el cmd de windows.
+
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 6.jpg" alt="Elemento 1">
+                
+                <p>Dentro del cmd de windows, ingresamos ping y la ip de nuestro sistema operativo ubuntu,
+                    en nuestro caso es "ping 10.0.2.15", con esto comprobara si hambas maquinas pueden hacer
+                    ping entre ella y si nuestros sistemas operativos pueden comunicarse entre ellos.
+
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 7.jpg" alt="Elemento 1">
+                
+                <p>Si todo esta correcto y hacen ping entre hambos sistemas, en Ejecutar ingresamos la ip 
+                    que tiene agsinada ubuntu y el nombre de la carpeta que tenemos para compartir, en 
+                    nuestro caso es "\\10.0.2.15\compartida".
+
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 8.jpg" alt="Elemento 1">
+                
+                <p>Si todo esta bien nos pedira que ingresemos las credenciales de red, tendremos que poner
+                    el nombre de usuario que hemos creado en unbuntu y la contraseña que hemos creado para 
+                    ese usuario.
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 9.jpg" alt="Elemento 1">
+                
+                <p>Una vez que ingresemos la credenciales de red y este correcto se nos abrira la venta con 
+                    la carpeta compartida que tenemos en ubuntu, ahora para probar que funciona correctamente,
+                    creamo un archivo de texto, si todo esta bien este archivo nos tiene que salir en la carpeta
+                    compartida que tenemos en ubuntu.
+                </p>
+            </div>
+            <div class="bloque-1">
+                <img src="captura/instalación windows/configurar windows/windows 10.jpg" alt="Elemento 1">
+                
+                <p>Para comprobar que el archivo de texto que hemos creado en windows esta compartido, nos vamos a 
+                    nuestro sistema ubuntu, y abrimos las terminal y nos cambiamos al usuario winuser1, y nos vamos 
+                    a donde tenemos nuestra carpeta compartida y hacemos un "ls" si todo esta correcto y a funcionado
+                    tendremos que ver el archivo de texto que hemos creado anterior mente.
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Pie de página -->
+    <footer class="footer-1">
+        <div class="container">
+          <!-- Filas de enlaces y redes sociales -->
+            <div class="footer-row">
+              <div class="footer-links">
+                    <h4>ayuda</h4>
+                    <ul>
+                        <li><a href="portada.html">volver al inicio</a></li>
+                    </ul>
+              </div>
+              <div class="footer-links">
+                    <h4>siguenos</h4>
+                    <div class="social-link">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"> </i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>

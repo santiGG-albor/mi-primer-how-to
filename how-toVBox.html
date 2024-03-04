@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Santiago Garcia">
+        <title> How-to de virtualBox</title>
+        <!-- Enlaces a las hojas de estilo y fuentes externas -->
+        <link rel="stylesheet" href="VBox.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- Icono de la pestaña del navegador -->
+        <link rel="icon" type="image/x-icon" href="captura/favicon.ico.png">
+    </head>
+    <body>
+        <!-- Encabezado de la página -->
+        <div class="header">
+            <h1> How-to sobre virtualBox</h1>
+            <p>descarga, instalacion y configuración de virtualBox</p>
+        </div>
+        <!--  Div del marco principal para poder dar un estilo de un marco a todo el contenido principal -->
+        <div class="marco">
+            <!-- Contenedor de los bloques de contenido, en el que agrupamos todo el contenido con un div para tenerlo todo agrupado
+            para poder darle los estilos del css a todos los bloques del contenido.-->
+            <div class="contenedor">
+                <h1></h1>
+                <div class="row">
+                    <div class="col">
+                        <h2>Descarga de virtualBox</h2>
+                        <p>Para poder descargarnos el software virtualBox, nos dirigimos a la web de <a href="https://www.virtualbox.org/">VirtualBox</a>, una vez en la web le haremos click en el apartado de Dowloads.<br>
+                            Una vez que estemos en el apartado de descarga procederemos a descarga la version más reciente del software de VirtualBox, haciendo click en el enlace de Windows hosts.
+                        </p>
+                        <img src="captura/descarga virtualBox.jpg" alt="descarga_virtualBox">
+                        <img src="captura/descarga virtualBox-1.jpg" alt="descarga_virtualBox">
+                    </div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col">
+                        <h2>1. Acceder a la instalción de virtualBox</h2>
+                        <p>Una vez descarga el software procederemos con la instalacion, haciendo doble click al archivo, seguido se nos abririra una venta para 
+                            empezar la instalacion, para empezar la instalacion le daremos click a Next
+                        </p>
+                        
+                        <img src="captura/instalación virtualBox/instalacion VBox-1.jpg" alt="paso_1">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"> 
+                        <h2>2. Configuración personalizada de la instalacion </h2>
+                        <p>En la siguiente ventana podemos elegir la localización de la instalacion, por de fecto ya tendra una localización preestablecida, pero podemos modifacarla a nuesto antojo
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-2.jpg" alt="paso_2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>3. Interfaz de red</h2>
+                        <p>En la siguiente ventana se instalara la interfaz de red, en el que nos dara un aviso de que al proceder a la instalción de la función de red de Oracle VM VirtualBox, nos restablecerá nuesta conexión red 
+                        y la desconectará temporalmente de la red. Le haremos click a yes para iniciar este paso
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-3.jpg" alt="paso_3">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>4. instalacion de dependencias de python core / win32api</h2>
+                        <p>En la siguiente ventana nos pedira que instalemos python core / win32api, Oracle VM virtualBox necesita para su instalacion el python bindings, y para ello requiere 
+                            instalemos primero python core y win32api, daremos click a Yes para proceder con su instalacion 
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-4.jpg" alt="paso_4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>5. Preparado para instalar</h2>
+                        <p>En la siguiente ventana procederemos a la instalacion de virtualBox, ya que anterior mente hemos realizados los pasos anteriores y el software esta listo para su instalacion
+                            daremos click a Install, para ejecutar su instalacion.
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-5.jpg" alt="paso_5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>6. Proceso de instalación</h2>
+                        <p>Al hacer click en Install se nos habrira otra ventana en la que nos pondra el proceso de instalacion y el estado en el que esta, en este parte de la instalacion no tenemos que realizar nada
+                            solo espara a que finalice la instalacion.
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-6.jpg" alt="paso_6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h2>7. instalación finalizada</h2>
+                        <p>Una vez que finalice la instalacion y todo se realice con correctamente, nos saldar la ultima venta informandonos de que la instalacion se completo en esta venta tendremos una casilla en la que
+                            podemos marcarla por si queremos que al cerrar la instalacion se nos ejecute Oracle virtualBox, y por ultimo para finalizar la instalción haremos click en Finish, en el que se cerrara la ventana
+                            y si hemos marcado la casilla de Start Oracle virtualBox se nos ejecutara el software o si la dejamos desmarcada cerraremos la instalacion sin ejecutar el software.
+                        </p>
+                        <img src="captura/instalación virtualBox/instalacion VBox-7.jpg" alt="paso_7">
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Configuración de red-nat</h2>
+                        <p>En este apartado se explicara de como crear y configurar una red-nat en virtualBox. Necesitaremos configurar una red-nat para que nuestra dos maquinas virtuales se puedan comunicar entre si. Para ello, 
+                            nos hiremos a herramientas en virtualBox, y clickamos en red para entrar en el menu de configuración.
+                        </p>
+                        <img src="captura/red nat/red nat.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <h2>Creación de red-nat</h2>
+                        <p>Una vez dentro del menu de red de virtualBox, clickamos en la pestaña de Redes NAT y creamos una red-nat nueva, al crearla tendremos nuestra red-nat con el nombre de NattNetwork, una vez creada solo tenemos que asignarles
+                            la red-nat a nuesto sistemas operativos Windows y Ubuntu.
+                        </p>
+                        <img src="captura/red nat/red nat-1.jpg" alt="">  <img src="captura/red nat/red nat-2.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <h2>Configuración de red-nat ubuntu</h2>
+                        <p>Para asignarle una red-nat a ubuntu, seleccionamos nuesto sistema ubuntu y hacemos click derecho y le damos a configuración, con lo que se nos abririra la ventana de configuración y nos vamos al apartado de red.</p>
+                        <img src="captura/red nat/red nat ubuntu1.jpg" alt=""> <img src="captura/red nat/red nat ubuntu.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <h2>Conectar una red-nat</h2>
+                        <p>En la ventana de configuración de red, seleccionamos la pestaña Adaptador 1, y en la pestaña de Conectado a , en le despegable seleccionamos red-nat, con esto ya tenemos una red-nat para nuestro sistema ubuntu.</p>
+                        <img src="captura/red nat/red nat ubuntu2.jpg" alt=""> <img src="captura/red nat/red nat ubuntu3.jpg" alt="">
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <h2>Configuración de red-nat Windows</h2>
+                        <p>Para asignarle una red-nat a windows, seleccionamos nuesto sistema windows y hacemos click derecho y le damos a configuración, con lo que se nos abririra la ventana de configuración y nos vamos al apartado de red.</p>
+                        <img src="captura/red nat/red nat windows.jpg" alt=""> <img src="captura/red nat/red nat windows1.jpg" alt="">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col">
+                        <h2>Conectar una red-nat</h2>
+                        <p>En la ventana de configuración de red, seleccionamos la pestaña Adaptador 1, y en la pestaña de Conectado a , en le despegable seleccionamos red-nat, con esto ya tenemos una red-nat para nuestro sistema ubuntu.</p>
+                        <img src="captura/red nat/red nat windows2.jpg" alt=""> <img src="captura/red nat/red nat windows3.jpg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Pie de página -->
+        <footer class="footer">
+            <div class="container">
+              <!-- Filas de enlaces y redes sociales -->
+              <div class="footer-row">
+                <div class="footer-links">
+                    <h4>ayuda</h4>
+                    <ul>
+                            <li><a href="portada.html"> volver al inicio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>siguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"> </i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
