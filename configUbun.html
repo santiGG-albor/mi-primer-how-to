@@ -34,7 +34,7 @@
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 5.jpg" alt="Elemento 1">
                 
-                <p>Vamos a pemezar con la configuración de nuestro sistema operativo ubuntu, para ello abriremos nuestra terminal y ingresamos
+                <p>Vamos a empezar con la configuración de nuestro sistema operativo Ubuntu, para ello abriremos nuestra terminal e ingresamos
                     el comando su, para identificarnos con root, y poder empezar con la configuración.
                 </p>
             </div>
@@ -42,50 +42,50 @@
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 5-1.jpg" alt="Elemento 1">
                 
                 <p>Una vez que estemos como root, ingresamos el comando "apt upgrade" para poder instalar las nuevas versiones de los paquetes
-                    de los repositorios de nuestro sistemas, que necesitaremos para nuestra configuración.
+                    de los repositorios de nuestro sistema, que necesitaremos para nuestra configuración.
 
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 7.jpg" alt="Elemento 1">
                 
-                <p>Cuando ingresemos el comando llegara a una parte que nos pedira que si queremos continuar, mostrando todo lo que va instalar y
+                <p>Cuando ingresemos el comando llegará a una parte que nos pedirá que si queremos continuar, mostrando todo lo que va a instalar y
                     actualizar, le damos a si ingresando "Y".
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 9.jpg" alt="Elemento 1">
                 
-                <p>A continuación vamos con el comando "apt update", que nos actualizara la listas de paquete disponibles en los repositorios de ubuntu.
+                <p>A continuación vamos con el comando "apt update", que nos actualizara la listas de paquetes disponibles en los repositorios de Ubuntu.
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 10.jpg" alt="Elemento 1">
                 
                 <p>Una vez todo configurado nos toca instalar samba, mediante el comando "apt install samba", que es un software que implementa el 
-                    protocolo SMB y permite a las distribuciones de ubuntu/linux compartir archivos e impresoras con cualquier otro dispositivo
-                    conectado a la red, que es lo que nos va a permitir que podamos cumunicar nuestros sistemas.
+                    protocolo SMB y permite a las distribuciones de Ubuntu/Linux compartir archivos e impresoras con cualquier otro dispositivo
+                    conectado a la red, que es lo que nos va a permitir que podamos comunicar nuestros sistemas.
                 </p>
             </div>    
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 13.jpg" alt="Elemento 1">
                 
-                <p>A continuación con todo ya instalado, vamos con la creacion del segundo usuario con el que vamos a utilizar para compartir la
-                    carpeta con nuesto sisitemas, ingresamos el comando "Adduser winuser1", con esto se no creara nuestro nuevo usuario.
+                <p>A continuación con todo ya instalado, vamos con la creación del segundo usuario con el que vamos a utilizar para compartir la
+                    carpeta con nuestro sisitema, ingresamos el comando "Adduser winuser1", con esto se nos creara nuestro nuevo usuario.
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 16.jpg" alt="Elemento 1">
                 
-                <p>Configuramos nuestro nuevo usuario, ingresando una nueva contraseña para este usuario, en el campo del nombre, telefono..., lo 
-                    dejamos en blanco estos campanos no, nos interesa, para terminar nos pedira si la información es correcta y le decimos que si
-                    con "Y", con esto tenemos listo nuestro nuevo usuario para comparti la carpeta.
+                <p>Configuramos nuestro nuevo usuario, ingresando una nueva contraseña para este usuario, en el campo del nombre, teléfono..., lo 
+                    dejamos en blanco estos campanos no, nos interesa, para terminar nos pedirá si la información es correcta y le decimos que si
+                    con "Y", con esto tenemos listo nuestro nuevo usuario para compartir la carpeta.
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 19.jpg" alt="Elemento 1">
                 
-                <p>Ahora nos vamos a logear con nuestro nuevo usuario, mediante en el comando "su winuser1" y nos dirigimos hacia su carpeta personal
+                <p>Ahora nos vamos a loguear con nuestro nuevo usuario, mediante en el comando "su winuser1" y nos dirigimos hacia su carpeta personal
                     con el comando "cd ..", hasta llega a la carpeta "/home", una vez en "/home" ingresamos el comando "cd winuser1" para entrar en 
                     nuestra carpeta personal.
                 </p>
@@ -107,14 +107,14 @@
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 22.jpg" alt="Elemento 1">
                 
-                <p>Ahora nos toca confugurar samba, que lo haremos mediante un archivo de texto, para ello vamos a instalar vim un editor de 
-                    texto plano  de linux, ingresamos el comando "Apt-get install vim", para proceder con la instalacion.
+                <p>Ahora nos toca configurar samba, que lo haremos mediante un archivo de texto, para ello vamos a instalar vim un editor de 
+                    texto plano  de Linux, ingresamos el comando "Apt-get install vim", para proceder con la instalación.
                 </p>
             </div>
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 24.jpg" alt="Elemento 1">
                 
-                <p>Cuando este instalado nos cambiamos a root mediante el comando "su", una vez en root vamos a editar el archivo, este archivo 
+                <p>Cuando esté instalado nos cambiamos a root mediante el comando "su", una vez en root vamos a editar el archivo, este archivo 
                     lo podemos editar con vim o con nano, ambos son editores de texto plano, en nuestro caso vamos a utilizar nano, ingresamos
                     el comando "nano /etc/samba/smb.comf".
                 </p>
@@ -122,7 +122,7 @@
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 25.jpg" alt="Elemento 1">
                 
-                <p>Una vez que se carge el editor de texto plano nos despalazamos hacia abajo para poder empezar con la configuración, y ingresamos 
+                <p>Una vez que se cargue el editor de texto plano nos desplazamos hacia abajo para poder empezar con la configuración, e ingresamos 
                     lo siguiente, [compartida] path= /home/winuser1/compartida  browseable = yes  read only = no  valid users = winuser1, una vez 
                     que lo tengamos todo solo nos toca guardar los cambiamos y salir del editor, para salir utilizamos el comando :wq.
                 </p>
@@ -133,8 +133,8 @@
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 28.jpg" alt="Elemento 1">
                 
                 <p>Ahora tenemos que añadir nuestro usuario winuser1 a los usuarios de samba y ponerle una contraseña, para poder entrar en nuestra 
-                    carpeta que vamos a comparti en el sistema operativo de windows, para ellos ingresamos el comando "smbpasswd -a winuser1", nos 
-                    pedira que creemos una nueva contraseña, para esta contraseña podemos utilizar la misma contraseña que tenemos para nuestro 
+                    carpeta que vamos a compartir en el sistema operativo de Windows, para ellos ingresamos el comando "smbpasswd -a winuser1", nos 
+                    pedirá que creemos una nueva contraseña, para esta contraseña podemos utilizar la misma contraseña que tenemos para nuestro 
                     usuario de winuser1.
                 </p>
             </div>
@@ -143,8 +143,8 @@
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 30.jpg" alt="Elemento 1">
                 
                 <p>Una vez añadido nuestro usuario en samba, nos cambiamos al usuario winuser1, dentro de nuestra carpeta compartida, creamos 
-                    un archivo nuevo, para crear este archivo nuevo lo hacemos con el comando "touch archivo-linux", que este archivo sera el 
-                    que veamos cuando entremos en nuestra carpeta compartida en windows.
+                    un archivo nuevo, para crear este archivo nuevo lo hacemos con el comando "touch archivo-linux", que este archivo será el 
+                    que veamos cuando entremos en nuestra carpeta compartida en Windows.
                 </p>
             </div>
             <div class="bloque-1">
@@ -157,8 +157,8 @@
             <div class="bloque-1">
                 <img src="captura/instalación ubuntu/confuguración/ubuntu 32.jpg" alt="Elemento 1">
                 
-                <p>Ahora con todo ya instalado, configurado y reseteado, nos queda mirar la dirección ip de nuesta máquina, con el comando 
-                    "ip a", y la anotamos que la vamos a tener que utilizar para poder entrar en nuestra carpeta compartida desde windows.
+                <p>Ahora, con todo ya instalado, configurado y reseteado, nos queda mirar la dirección IP de nuestra máquina, con el comando 
+                    "ip a", y la anotamos que la vamos a tener que utilizar para poder entrar en nuestra carpeta compartida desde Windows.
                 </p>
             </div>
             <div class="bloque-1">
@@ -166,7 +166,7 @@
                 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/PPooKoWYHwI?si=Ju-QFWYigSimX5_o" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <br><br>
-                    Si el paso para configurar samba mediante el editor de texto nano, se nos complica un poco tenemos un video 
+                    Si el paso para configurar samba mediante el editor de texto nano, se nos complica un poco, tenemos un video 
                     para ver un poco más detallado donde se nos muestra paso a paso la configuración de samba mediante nano.
                     
                 </p>
